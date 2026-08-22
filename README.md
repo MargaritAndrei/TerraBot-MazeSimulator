@@ -13,10 +13,15 @@ Entities & Environmental Modeling
 
 The grid-based map contains multiple interacting entities:
 Air: Modeled across multiple types (Tropical, Polar, Temperate, Desert, Mountain). Computes air quality and toxicity based on atmospheric parameters (O₂, CO₂, humidity, temperature, dust/pollen). Supports dynamic weather events (e.g., storms, rainfall, seasonal shifts).
+
 Soil: Subtypes (Forest, Swamp, Desert, Grassland, Tundra) with calculated quality scores based on nitrogen, organic matter, and moisture retention.
+
 Water: Physical sources with metrics for salinity, pH, purity, and freezing state, providing environmental hydration and animal sustenance.
+
 Plants: 5 botanical classifications (Flowering, Gymnosperms, Ferns, Mosses, Algae). Produce O₂ as they progress through growth stages (young → mature → old → dead).
+
 Animals: Categorized by diet (Herbivores, Carnivores, Omnivores, Detritivores, Parasites). Move autonomously every 2 iterations to hunt/forage, digest food into soil organic matter, and react to toxic atmospheric conditions.
+
 Entity Discovery Gate: Plants, animals, and water sources must be scanned by TerraBot before they can actively participate in automatic ecosystem interactions.
 
 The classes are made using classic inheritance.
